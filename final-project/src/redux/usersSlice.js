@@ -1,6 +1,4 @@
 import {createSlice, createAsyncThunk} from '@reduxjs/toolkit';
-import { act } from 'react';
-
 
 export const fetchUsers = createAsyncThunk('users/fetch', async () => {
     return new Promise((resolve) => {

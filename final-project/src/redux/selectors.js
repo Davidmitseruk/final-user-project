@@ -1,19 +1,17 @@
-import { createSelector } from "@reduxjs/toolkit";
+import { createSelector } from "reselect";
 
-const getUsers = (state) => state.users.items;
-const getFilter = (state) => state.users.filter;
+const selectUsers = (state) => state.users.items;
+const selectFilter = (state) => state.users.filter;
 
 export const selectFilteredUsers = createSelector(
-  [getUsers, getFilter],
+  [selectUsers, selectFilter],
   (users, filter) => {
     if (filter === "active") {
       return users.filter((u) => u.active);
     }
-
     if (filter === "inactive") {
       return users.filter((u) => !u.active);
     }
-
     return users;
   }
 );
