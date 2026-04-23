@@ -1,12 +1,13 @@
 import { createPortal } from "react-dom";
 
-export default function Modal({ onConfirm, onCancel }) {
+export default function Modal({children, onClose}) {
   return createPortal(
     <div>
-      <p>Are you sure?</p>
-
-      <button onClick={onConfirm}>Yes</button>
-      <button onClick={onCancel}>Cancel</button>
+      <div>
+        {children}
+        <button onClick={onClose}>Close</button>
+        
+      </div>
     </div>,
     document.body
   );
