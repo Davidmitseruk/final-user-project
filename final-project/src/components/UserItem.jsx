@@ -12,9 +12,9 @@ export default function UserItem({user}){
 
     return(
         <div className="users">
-            <Link to={`/user/${user.id}`}>{user.name}</Link>
-            <input type="checkbox" checked={user.active} onChange={() => dispatch(toggleUser(user.id))}/>
-            <button onClick={() => setOpen(true)}>Delete user</button>
+            <Link to={`/user/${user.id}`} className="userName">{user.name}</Link>
+            <input type="checkbox" checked={user.active} onChange={() => dispatch(toggleUser(user.id))} className="userCheck"/>
+            <button onClick={() => setOpen(true)} className="deleteUser">Delete</button>
 
             {open && (
                 <Modal onClose={() => setOpen(false)}>

@@ -1,47 +1,158 @@
 .container{
     margin: 0 auto;
-    width: 1200px;
+    width: 800px;
     padding: 0 15px;
-    border: 1px solid grey;
     border-radius: 8px;
-    background-color: rgb(113, 179, 250);
 }
 .title{
-    color: antiquewhite;
-    font-size: 64px;
+    color: rgb(255, 57, 119);
+    font-size: 32px;
     text-align: center;
+    margin-bottom: 10px;
 }
 .filter{
+    gap: 35px;
+    background-color: rgb(255, 253, 248);
+    border: 1px solid rgb(255, 234, 188);
+    border-radius: 15px;
+    width: 400px;
     display: flex;
     justify-content: center;
-    gap: 15px;
+    margin: 0 auto;
+    margin-bottom: 30px;
 }
 
-.filterBtn{
+.filterBtn {
+    padding: 8px 14px;
+    border: none;
     border-radius: 10px;
-    padding: 15px 20px;
+    background: transparent;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    width: 90px;
+    height: 35px;
     font-size: 18px;
-    background-color: rgb(255, 255, 135);
-    border-color: aliceblue;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
 }
+.filterBtn.active {
+    background: linear-gradient(to right, #ff6b6b, #ffa94d);
+    color: white;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+.filterBtn:hover{
+    background-color: rgb(253, 243, 218);
+}
+
 .userWrap{
-    background-color: rgb(129, 198, 255);
     border-radius: 15px;
-    width: 500px;
+    width: 600px;
     margin: 0 auto;
     padding: 23px;
+    margin-bottom: 50px;
 }
-.userLayout{
-    border: 1px solid grey;
-    border-radius: 15px;
 
-}
-.users{
-    border: 1px solid grey;
+.users {
+    border: 1px solid  rgb(255, 234, 188);
     margin-top: 5px;
     border-radius: 15px;
-    background-color: rgb(255, 255, 184);
+    background-color: rgb(255, 253, 248);
     padding: 10px 15px;
-    
+    display: flex;
+    align-items: center;
+
+    transition: box-shadow 0.25s ease;
+}
+.users:hover{
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.userName {
+    font-size: 16px;
+    text-decoration: none;
+    margin-right: auto;
+    color: black;
+    margin-left: 30px;
+    transition: transform 0.2s ease;
+    display: inline-block; 
+}
+
+.userName:hover {
+    transform: scale(1.1);
+}
+
+.userCheck{
+ scale: 2;
+ margin: 0 10px;
+}
+.userCheck:checked {
+    accent-color: #ffc188;
+}
+
+.deleteUser {
+    height: 25px;
+    background-color: #ffc188;
+    border: none;
+    border-radius: 15px;
+}
+
+.navigation{
+    background-color: rgb(255, 255, 255);
+    border-bottom: 1px solid rgb(231, 198, 166);
+    height: 70px;
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: center;
+}
+.navlink{
+    color: #545454;
+    font-size: 32px;
+    text-decoration: none;
+    margin: 5px 120px 0;
+    border-radius: 15px;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 120px;
+}
+.navlink:hover{
+    color: #545454;
+    background-color: #fff0e2;
+}
+
+.createBox{
+    background-color: rgb(255, 251, 248);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 25px;
+    width: 400px;
+    margin: 0 auto;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    border-radius: 15px;
+}
+.createTitle{
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 24px;
+}
+.createInput{
+    height: 25px;
+    padding: 5px 10px;
+    border: 2px solid coral;
+    border-radius: 8px;
+}
+.createInput:focus{
+    border: 2px solid coral;
+}
+.createBtn{
+    height: 37px;
+    background-color: rgb(254, 126, 79);
+    color: white;
+    border: none;
+    border-radius: 8px;
+
+    transition: transform 0.10s ease;
+}
+.createBtn:hover{
+    transform: scale(1.05);
 }

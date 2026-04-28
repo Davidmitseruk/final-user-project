@@ -1,7 +1,14 @@
-body{
+body {
     margin: 0;
-    background-color: rgb(189, 221, 255);
+    min-height: 100vh;
     font-family: sans-serif;
+
+    background: linear-gradient(
+        to bottom right,
+        #fbeee2,
+        #f9ead3,
+        #fdf0b9
+    );
 }
 
 h1,

@@ -13,10 +13,10 @@ export default function CreateUserPage(){
     navigate('/');
   };
  return(
-  <div>
-    <h1>Create User!</h1>
-    <input value={name} onChange={(e) => setName(e.target.value)}/>
-    <button onClick={handleAdd}>Create</button>
+  <div className="createBox">
+    <h1 className="createTitle">Create New User</h1>
+    <input value={name} onChange={(e) => setName(e.target.value)} placeholder="Enter username..." className="createInput"/>
+    <button onClick={handleAdd} className="createBtn">Create</button>
   </div>
  )
 }

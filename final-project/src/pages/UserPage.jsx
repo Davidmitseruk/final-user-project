@@ -1,6 +1,6 @@
 import { useParams, useNavigate } from "react-router-dom";
 import { useSelector } from "react-redux";
-import styles from "../styles/layout.css";
+import styles from "../styles/users.css";
 
 export default function UserPage(){
     const {id} = useParams();
@@ -14,9 +14,12 @@ export default function UserPage(){
 
     return(
         <div className="userLayout">
-            <h1>{user.name}</h1>
-            <p>{user.active ? "active" : "inactive"}</p>
-            <button onClick={() => navigate(-1)}>Back</button>
+            <h1 className="userInfoTitle">User info</h1>
+            <p className="usernameTekst">Name</p>
+            <h2 className="username">{user.name}</h2>
+            <p className="usernameTekst">Status</p>
+            <p className="userStatus">{user.active ? "active" : "inactive"}</p>
+            <button onClick={() => navigate(-1)} className="usernameBtn">Back</button>
         </div>
     )
 
