@@ -1,0 +1,47 @@
+.container{
+    margin: 0 auto;
+    width: 1200px;
+    padding: 0 15px;
+    border: 1px solid grey;
+    border-radius: 8px;
+    background-color: rgb(113, 179, 250);
+}
+.title{
+    color: antiquewhite;
+    font-size: 64px;
+    text-align: center;
+}
+.filter{
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.filterBtn{
+    border-radius: 10px;
+    padding: 15px 20px;
+    font-size: 18px;
+    background-color: rgb(255, 255, 135);
+    border-color: aliceblue;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+}
+.userWrap{
+    background-color: rgb(129, 198, 255);
+    border-radius: 15px;
+    width: 500px;
+    margin: 0 auto;
+    padding: 23px;
+}
+.userLayout{
+    border: 1px solid grey;
+    border-radius: 15px;
+
+}
+.users{
+    border: 1px solid grey;
+    margin-top: 5px;
+    border-radius: 15px;
+    background-color: rgb(255, 255, 184);
+    padding: 10px 15px;
+    
+}
