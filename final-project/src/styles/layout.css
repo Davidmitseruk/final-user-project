@@ -5,8 +5,8 @@
     border-radius: 8px;
 }
 .title{
-    color: rgb(255, 57, 119);
-    font-size: 32px;
+    color: rgb(255, 245, 57);
+    font-size: 62px;
     text-align: center;
     margin-bottom: 10px;
 }
@@ -34,7 +34,7 @@
     font-size: 18px;
 }
 .filterBtn.active {
-    background: linear-gradient(to right, #ff6b6b, #ffa94d);
+    background: linear-gradient(to right, #6b8bff, #4dacff);
     color: white;
     box-shadow: 0 4px 12px rgba(0,0,0,0.15);
 }
@@ -59,10 +59,12 @@
     display: flex;
     align-items: center;
 
-    transition: box-shadow 0.25s ease;
+    transition: box-shadow 0.1s ease;
+    transition: transform 0.1s ease;
 }
 .users:hover{
-        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+        transform: scale(1.05);
 }
 
 .userName {
@@ -84,12 +86,12 @@
  margin: 0 10px;
 }
 .userCheck:checked {
-    accent-color: #ffc188;
+    accent-color: #54b2ff;
 }
 
 .deleteUser {
     height: 25px;
-    background-color: #ffc188;
+    background-color: #54b2ff;
     border: none;
     border-radius: 15px;
 }

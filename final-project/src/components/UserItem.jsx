@@ -18,11 +18,11 @@ export default function UserItem({user}){
 
             {open && (
                 <Modal onClose={() => setOpen(false)}>
-                    <p>Are you sure you want to delete this user?</p>
+                    <p className="confirmDeleteText">Are you sure you want to delete this user?</p>
                     <button onClick={() => {
                         dispatch(deleteUser(user.id));
                         setOpen(false)
-                    }}>Yes</button>
+                    }} className="confirmBtn">Yes</button>
                     
                 </Modal>
             )}

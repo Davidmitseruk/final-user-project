@@ -1,0 +1,62 @@
+.modalWindow{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+
+}
+.modalBody{
+    width: 400px;
+    height: 200px;
+    background-color: rgb(255, 251, 248);
+    border: 2px solid rgb(0, 106, 255);
+    border-radius: 15px;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.confirmDeleteText{
+    font-size: 24px;
+    text-align: center;
+    font-weight: 600;
+}
+.confirmBtn{
+    background-color: rgb(255, 0, 0);
+    color: whitesmoke;
+    width: 380px;
+    height: 60px;
+    font-size: 36px;
+    border: none;
+    border-radius: 15px;
+
+    transition: transform 0.25s ease;
+}
+.confirmBtn:hover{
+    transform: scale(1.05);
+    background-color: rgb(223, 0, 0);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.4);
+}
+
+.closeBtn{
+    background-color: rgb(106, 108, 118);
+    color: whitesmoke;
+    width: 380px;
+    height: 60px;
+    font-size: 36px;
+    border: none;
+    border-radius: 15px;
+
+    transition: transform 0.25s ease;
+}
+.closeBtn:hover{
+    transform: scale(1.05);
+    background-color: rgb(59, 55, 55);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.4);
+}
